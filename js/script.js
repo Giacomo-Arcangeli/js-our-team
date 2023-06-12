@@ -4,32 +4,32 @@
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        photo: 'wayne-barnett-founder-ceo.jpg'
+        photo: 'img/wayne-barnett-founder-ceo.jpg'
     },
     {
         name: 'Angela Caroll',
         role: 'Chief Editor',
-        photo: 'angela-caroll-chief-editor.jpg'
+        photo: 'img/angela-caroll-chief-editor.jpg'
     },
     {
         name: 'Walter Gordon',
         role: 'Office Manager',
-        photo: 'walter-gordon-office-manager.jpg'
+        photo: 'img/walter-gordon-office-manager.jpg'
     },
     {
         name: 'Angela Lopez',
         role: 'Social Media Manager',
-        photo: 'angela-lopez-social-media-manager.jpg'
+        photo: 'img/angela-lopez-social-media-manager.jpg'
     },
     {
         name: 'Scott Estrada',
         role: 'Developer',
-        photo: 'scott-estrada-developer.jpg'
+        photo: 'img/scott-estrada-developer.jpg'
     },
     {
         name: 'Barbara Ramos',
         role: 'Graphic Designer',
-        photo: 'barbara-ramos-graphic-designer.jpg'
+        photo: 'img/barbara-ramos-graphic-designer.jpg'
     }
 ]; 
 
@@ -46,8 +46,8 @@ for (let i = 0; i < team.length; i++){
     teamList += `
         <li>
             <p><b class="text-danger">Nome:</b> ${memberTeam['name']}</p>
-            <p><b class="text-danger">Ruolo:</b> ${memberTeam['role']}</p>
-            <p><b class="text-danger">Foto:</b> ${memberTeam['photo']}</p>
+            <p><b class="text-primary">Ruolo:</b> ${memberTeam['role']}</p>
+            <p class="border-bottom border-success"><b class="text-success">Foto:</b> <img class="img-thumbnail img-fluid rounded-5" src="${memberTeam['photo']}"></p>
         </li>
     `;
 }
