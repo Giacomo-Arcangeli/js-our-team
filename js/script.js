@@ -1,6 +1,6 @@
 // creo l'array di oggetti
 
- const TeamList = [
+ const team = [
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
@@ -31,5 +31,27 @@
         role: 'Graphic Designer',
         photo: 'barbara-ramos-graphic-designer.jpg'
     }
-];  console.log(TeamList);
+]; 
+
+console.log(team);
+
+// recupero l'elemento lista dal DOM
+const list = document.querySelector('ul');
+
+// stampo in pagina la lista di oggetti
+let teamList = '';
+
+for (let i = 0; i < team.length; i++){
+    memberTeam = team[i];
+    teamList += `
+        <li>
+            <p><b class="text-danger">Nome:</b> ${memberTeam['name']}</p>
+            <p><b class="text-danger">Ruolo:</b> ${memberTeam['role']}</p>
+            <p><b class="text-danger">Foto:</b> ${memberTeam['photo']}</p>
+        </li>
+    `;
+}
+
+list.innerHTML = teamList;
+
 
